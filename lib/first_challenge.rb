@@ -13,7 +13,21 @@ def first_challenge
     }
   }
 
-  #your code here
+ contacts.each do |person, data|
+    #person = JS FM
+    #data = hash of key value paors 
+    if person == "Freddy Mercury"
+      data.each do |key, value|
+        #keys are name email ice know
+        #values are their strings/arrays
+        if key == :favorite_icecream_flavors
+          value.delete_if {|flavor| flavor == "strawberry"}
+        end
+      end
+    end
+  end
+            #each index is a flavor 
+
 
 
   #remember to return your newly altered contacts hash!

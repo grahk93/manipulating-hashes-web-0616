@@ -6,7 +6,10 @@ def second_challenge
    grains: ["rice", "pasta"]
   }
 
-  #code your solution here!
+  values_array = groceries.values
+  values_string = values_array.join(",")
+  values_array_final = values_string.split(",")
+
 
   
 
